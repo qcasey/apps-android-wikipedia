@@ -227,8 +227,7 @@ class SavedPageSyncService : JobIntentService() {
 
     private fun reqMobileHTML(pageTitle: PageTitle): Observable<okhttp3.Response> {
         val request: Request = makeUrlRequest(pageTitle.wikiSite,
-                ServiceFactory.getRestBasePath(pageTitle.wikiSite) +
-                        RestService.PAGE_HTML_ENDPOINT + UriUtil.encodeURL(pageTitle.prefixedText),
+                ServiceFactory.getRestBasePath(pageTitle.wikiSite) + "/page/" + UriUtil.encodeURL(pageTitle.prefixedText) + "/html",
                 pageTitle).build()
         return Observable.create { emitter ->
             try {

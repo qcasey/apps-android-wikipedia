@@ -15,6 +15,7 @@ class NetworkConnectivityReceiver : BroadcastReceiver() {
     private var lastCheckedMillis: Long = 0
 
     fun isOnline(): Boolean {
+        return true
         if (System.currentTimeMillis() - lastCheckedMillis > ONLINE_CHECK_THRESHOLD_MILLIS) {
             updateOnlineState()
             lastCheckedMillis = System.currentTimeMillis()

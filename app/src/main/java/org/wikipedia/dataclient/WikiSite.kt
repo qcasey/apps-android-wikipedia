@@ -124,7 +124,7 @@ data class WikiSite(
         fun forLanguageCode(languageCode: String): WikiSite {
             val uri = ensureScheme(Uri.parse(DEFAULT_BASE_URL))
             return WikiSite(
-                (if (languageCode.isEmpty()) "" else languageCodeToSubdomain(languageCode) + ".") + uri.authority,
+                uri.authority,
                 languageCode
             )
         }

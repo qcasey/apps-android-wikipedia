@@ -216,7 +216,7 @@ interface RestService {
     ): Metrics
 
     companion object {
-        const val REST_API_PREFIX = "/api/rest_v1"
+        const val REST_API_PREFIX = "/w/rest.php/v1"
         const val ACCEPT_HEADER_PREFIX = "application/json; charset=utf-8; profile=\"https://www.mediawiki.org/wiki/Specs/"
         const val ACCEPT_HEADER_SUMMARY = ACCEPT_HEADER_PREFIX + "Summary/1.2.0\""
         const val ACCEPT_HEADER_DEFINITION = ACCEPT_HEADER_PREFIX + "definition/0.7.2\""
