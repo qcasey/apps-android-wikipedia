@@ -530,8 +530,8 @@ interface Service {
     ): DiscussionToolsEditResponse
 
     companion object {
-        const val WIKIPEDIA_URL = "https://wikipedia.org/"
-        const val WIKIDATA_URL = "https://www.wikidata.org/"
+        const val WIKIPEDIA_URL = "https://wiki.openstreetmap.org"
+        const val WIKIDATA_URL = "https://wiki.openstreetmap.org"
         const val COMMONS_URL = "https://commons.wikimedia.org/"
         const val URL_FRAGMENT_FROM_COMMONS = "/wikipedia/commons/"
         const val MW_API_PREFIX = "w/api.php?format=json&formatversion=2&errorformat=html&errorsuselocal=1&"
